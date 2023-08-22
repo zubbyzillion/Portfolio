@@ -1,4 +1,4 @@
-.profile-card {
+.profile_card {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,7 +6,7 @@
     margin-bottom: 4rem;
     // border-bottom: .1rem solid #1c1917;
 
-    .profile-card-info {
+    .profile_card_info {
         img {
             border-radius: 50%;
             height: 8rem;
@@ -28,8 +28,8 @@
     }
 }
 
-.resume-btn {
-    .resume-btn-link {
+.resume_btn {
+    .resume_btn_link {
         text-decoration: none;
         color: $color-white;
         background-color: $color-dark-blue;

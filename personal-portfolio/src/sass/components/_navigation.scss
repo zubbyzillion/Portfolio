@@ -1,11 +1,11 @@
-.navigation-list-section {
+.navigation_list_section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     border-bottom: 1px solid $color-black;
 
-    .navigation-list {
+    .navigation_list {
         min-width: -webkit-fill-available;
         display: flex;
         gap: 4rem;
@@ -14,13 +14,33 @@
         // padding-bottom: 1.5rem;
         list-style-type: none;
         font-family: $font-primary;
-    }
-}
 
-.navigation-active {
-    // content: "";
-    font-family: $font-primary;
-    font-weight: 500;
-    // padding-bottom: 1.5rem;
-    border-bottom: 2px solid $color-light-blue;
+        button {
+            font-size: 1.6rem;
+            height: 4.8rem;
+            width: 9.8rem;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            font-family: $font-primary;
+        }
+
+        .btn_navigation {
+            font-size: 1.6rem;
+            height: 4.8rem;
+            width: 9.8rem;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            font-family: $font-primary;
+            // text-decoration: none;
+
+            &_active {
+                font-weight: 500;
+                width: 9.8rem;
+                border-radius: .2rem;
+                border-bottom: 3px solid $color-light-blue;
+            }
+        }
+    }
 }
