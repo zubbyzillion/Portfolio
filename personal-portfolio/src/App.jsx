@@ -4,32 +4,37 @@ import Favicon from '/Favicon.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={Favicon} className="logo" alt="personal Logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
     </>
-  )
+  );
+}
+
+function Header() {
+
+  const userName = "Princewill Beluonwu-Ogbo";
+  const usernameDescription = "UX Engineer";
+
+  return (
+    <header>
+      <div className="profile-card">
+        <div className="profile-card-info">
+          <img src="profile-pic.jpg" alt="profile-img" />
+
+          <div>
+            <h3> {userName} </h3>
+            <p> {usernameDescription} </p>
+          </div>
+        </div>
+
+        <div className="resume-btn">
+          <a href="/resume" className="resume-btn-link">Download Resume</a>
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export default App
