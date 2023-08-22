@@ -31,6 +31,7 @@ function Header() {
         </div>
 
         <div className="resume_btn">
+
           <a href="/resume" className="resume_btn_link">Download Resume</a>
         </div>
       </div>
@@ -40,19 +41,27 @@ function Header() {
 
 function Navigation() {
   const [navigation, setNavigation] = useState("");
+  // const [isActive, setActive] = useState(false);
+
+  // function  activeNavigation() {
+  //   // isActive= true;
+
+  //   setActive(current => current);
+  // }
 
   function handleNavigation() {
     // e.innerHTML();
 
-    !navigation ? setNavigation(() => "btn_navigation_active") : setNavigation("");
+    !navigation === true ? setNavigation(() => "btn_navigation_active") : setNavigation("");
     // setNavigation(navigation => !navigation);
   }
 
   console.log(navigation);
+  // console.log(isActive);
 
   return (
     <div className="navigation_list_section">
-      <ul className="navigation_list">
+      <div className="navigation_list">
         <button key="about" onClick={handleNavigation} className= {navigation ? "btn_navigation_active" : ""} id="#About">
           <li className="navigation_active_list" id="#About">About</li>
         </button>
@@ -65,7 +74,7 @@ function Navigation() {
         <button key="blog" onClick={handleNavigation} className={navigation ? "btn_navigation_active" : ""} id="#Blog">
           <li className="active" id="#Blog">Blog</li>
         </button>
-      </ul>
+      </div>
     </div>
   );
 }
