@@ -1,1 +1,9 @@
-import "./layout/header";
+@import "./abstract/animations";
+@import "./abstract/mixins";
+@import "./abstract/variables";
+@import "./components/navigation";
+@import "./pages/about";
+@import "./pages/home";
+@import "./pages/showcase";
+@import "base";
+@import "typography";
