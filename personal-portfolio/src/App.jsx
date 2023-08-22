@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Header />
+      <Navigation />
     </>
   );
 }
@@ -34,6 +35,19 @@ function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+function Navigation() {
+  return (
+    <div className="navigation-list-section">
+      <ul className="navigation-list">
+        <button><li className="navigation-active" id="#About">About</li></button>
+        <button><li className="active" id="#Showcase">Showcase</li></button>
+        <button><li className="active" id="#Contact">Contact</li></button>
+        <button><li className="active" id="#Blog">Blog</li></button>
+      </ul>
+    </div>
   );
 }
 

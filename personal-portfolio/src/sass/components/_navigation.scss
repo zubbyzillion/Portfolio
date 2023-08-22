@@ -1,0 +1,26 @@
+.navigation-list-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-bottom: 1px solid $color-black;
+
+    .navigation-list {
+        min-width: -webkit-fill-available;
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        justify-content: space-evenly;
+        // padding-bottom: 1.5rem;
+        list-style-type: none;
+        font-family: $font-primary;
+    }
+}
+
+.navigation-active {
+    // content: "";
+    font-family: $font-primary;
+    font-weight: 500;
+    // padding-bottom: 1.5rem;
+    border-bottom: 2px solid $color-light-blue;
+}
