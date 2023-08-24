@@ -62,8 +62,8 @@
                 0% {
                     position: absolute;
                     overflow: hidden;
-                    top: -60px;
-                    transition-delay: 45s;
+                    top: -500px;
+                    // transition-delay: 45s;
                     opacity: 0;
                 }
 
@@ -75,7 +75,7 @@
 
                 100% {
                     position: relative;
-                    top: 100px;
+                    top: 60px;
                     opacity: 1;
                 }
             }
