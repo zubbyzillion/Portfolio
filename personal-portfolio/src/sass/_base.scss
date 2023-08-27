@@ -17,6 +17,11 @@ body {
     font-size: 1.6rem;
     background: $color-gray;
     padding: 6.4rem 12.8rem;
+
+    ::selection {
+        color: $color-gray;
+        background-color: $color-light-blue;
+    }
 }
 
 #root {
