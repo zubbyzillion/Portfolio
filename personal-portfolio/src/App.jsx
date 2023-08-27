@@ -62,18 +62,19 @@ function Navigation() {
   return (
     <div className="navigation_list_section">
       <div className="navigation_list">
-        <button key="about" onClick={handleNavigation} className= {navigation ? "btn_navigation_active" : ""} id="#About">
+      {/* <button key="about" onClick={handleNavigation} className= {navigation ? "btn_navigation_active" : ""} id="#About">
           <li className="navigation_active_list" id="#About">About</li>
-        </button>
-        <button key="showcase" onClick={handleNavigation} className={navigation ? "btn_navigation_active" : ""} id="#Showcase">
-          <li className="active" id="#Showcase">Showcase</li>
-        </button>
-        <button key="contact" onClick={handleNavigation} className={navigation ? "btn_navigation_active" : ""} id="#Contact">
-          <li className="active" id="#Contact">Contact</li>
-        </button>
-        <button key="blog" onClick={handleNavigation} className={navigation ? "btn_navigation_active" : ""} id="#Blog">
-          <li className="active" id="#Blog">Blog</li>
-        </button>
+        </button> */}
+        <div className="navigation_data_list_w">
+          <input type="radio" name="navaigation_data_list" value="about" id="#About" className="active" checked />
+          <label for="about">About</label>
+          <input type="radio" name="navaigation_data_list" value="about" id="#ShowCase" className="active" />
+          <label for="showcase">ShowCase</label>
+          <input type="radio" name="navaigation_data_list" value="about" id="#Contact" className="active" />
+          <label for="contact">Contact</label>
+          <input type="radio" name="navaigation_data_list" value="about" id="#Blog" className="active" />
+          <label for="blog">Blog</label>
+        </div>
       </div>
     </div>
   );

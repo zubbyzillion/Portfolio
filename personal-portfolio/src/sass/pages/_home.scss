@@ -31,17 +31,21 @@
 .resume_btn {
     .resume_btn_link {
         display: flex;
-        justify-content: center;
         align-items: center;
+        align-content: center;
+        justify-content: center;
         text-decoration: none;
         color: $color-white;
         background-color: $color-dark-blue;
         padding: 1.2rem 2.4rem;
         border-radius: 2.4rem;
 
-        transition: all .2s ease-in;
+        transition: all .6s ease-in;
 
         &:hover {
+            // display: flex;
+            // align-items: center;
+            // justify-items: center;
             background-color: $color-light-blue;
 
             // font-family: Material Icons;
@@ -57,28 +61,6 @@
                 content: "\e2c4";
                 overflow: hidden;
             }
-            
-            @keyframes dropAnim {
-                0% {
-                    position: absolute;
-                    overflow: hidden;
-                    top: -500px;
-                    // transition-delay: 45s;
-                    opacity: 0;
-                }
-
-                50% {
-                    top: 0px;
-                    opacity: 1;
-                    transition-delay: 90s;
-                }
-
-                100% {
-                    position: relative;
-                    top: 60px;
-                    opacity: 1;
-                }
-            }
         }
     }
 }
@@ -90,3 +72,4 @@
     'GRAD' 0,
     'opsz' 48
   }
+

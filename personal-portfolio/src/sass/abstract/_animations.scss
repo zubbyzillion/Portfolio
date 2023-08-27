@@ -1,0 +1,21 @@
+@keyframes dropAnim {
+    0% {
+        position: absolute;
+        overflow: hidden;
+        top: -500px;
+        // transition-delay: 45s;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 1;
+        transition-delay: 90s;
+    }
+
+    100% {
+        position: relative;
+        top: 60px;
+        opacity: 1;
+    }
+}
