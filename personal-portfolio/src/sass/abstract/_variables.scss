@@ -1,9 +1,11 @@
 // COLORS
-$color-white: #ffffff;
-$color-gray: #f1f1f1;
-$color-black: #1c1917;
-$color-dark-blue: #082f68;
-$color-light-blue: #409eff;
+:root {
+    --color-white: #ffffff;
+    --color-gray: #f1f1f1;
+    --color-black: #1c1917;
+    --color-dark-blue: #082f68;
+    --color-light-blue: #409eff;
+}
 
 // FONTS
 $font-primary: "Ubuntu", sans-serif;

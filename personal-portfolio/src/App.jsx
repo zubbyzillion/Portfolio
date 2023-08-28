@@ -39,31 +39,10 @@ function Header() {
 }
 
 function Navigation() {
-  const [navigation, setNavigation] = useState(true);
-  const [selectedOption, setSelectedOptionchange] = useState(null);
+  const [navigation, setNavigation] = useState(false);
+  // const [selectedOption, setSelectedOptionchange] = useState(null);
   // const [isActive, setActive] = useState(false);
 
-
-  const selectedOptionChange = (e) => {
-    setSelectedOption(e.innerHTML);
-  };
-
-  function handleNavigation() {
-    // e.innerHTML();
-
-    setNavigation(!navigation) ? "" : true;
-
-    // checked === true ? setNavigation(() => "checked") : setNavigation("");
-
-    // {setNavigation(navigation === true ? navigation === false : "")}
-
-    // setNavigation(navigation => !navigation);
-    // navigation === true ? setNavigation(() => "checked") : setNavigation("");
-  }
-
-  console.log(navigation);
-  console.log(setNavigation);
-  // console.log(isActive);
 
   return (
     <div className="navigation_list_section">
@@ -72,17 +51,17 @@ function Navigation() {
           <li className="navigation_active_list" id="#About">About</li>
         </button> */}
         <div className="navigation_data_list_w">
-          <input type="radio" name="navaigation_data_list" value="about" id="#About" className="active" checked={navigation} onChange={handleNavigation} />
-          <label for="about" onClick={ handleNavigation }>About</label>
+          <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About"  />
+          <label htmlFor="about">About</label>
 
-          <input type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" className="active" checked={navigation} onChange={handleNavigation} />
-          <label for="showcase" onClick={ handleNavigation }>ShowCase</label>
+          <input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" />
+          <label htmlFor="showcase">ShowCase</label>
 
-          <input type="radio" name="navaigation_data_list" value="contact" id="#Contact" className="active" checked={navigation} onChange={handleNavigation} />
-          <label for="contact" onClick={ handleNavigation }>Contact</label>
+          <input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" />
+          <label htmlFor="contact">Contact</label>
           
-          <input type="radio" name="navaigation_data_list" value="blog" id="#Blog" className="active" checked={navigation} onChange={handleNavigation} />
-          <label for="blog" onClick={ handleNavigation }>Blog</label>
+          <input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" />
+          <label htmlFor="blog">Blog</label>
         </div>
       </div>
     </div>
