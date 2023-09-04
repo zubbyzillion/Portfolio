@@ -12,7 +12,7 @@ SECONDARY - #082f68;
 GRAY - #333333;
 */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,4 +21,4 @@ GRAY - #333333;
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-}
+} */

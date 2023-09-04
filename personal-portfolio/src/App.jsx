@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Favicon from '/Favicon.svg'
 import './App.css'
@@ -39,10 +39,38 @@ function Header() {
 }
 
 function Navigation() {
-  const [navigation, setNavigation] = useState(false);
+  const [navigation, setNavigation] = useState(true);
   // const [selectedOption, setSelectedOptionchange] = useState(null);
-  // const [isActive, setActive] = useState(false);
 
+
+
+  // const selectedOptionChange = (e) => {
+  //   setSelectedOption(e.innerHTML);
+  // };
+
+  function handleNavigation() {
+    // e.innerHTML();
+
+    setNavigation(!navigation) ? "" : true;
+
+    // checked === true ? setNavigation(() => "checked") : setNavigation("");
+
+    // {setNavigation(navigation === true ? navigation === false : "")}
+
+    // setNavigation(navigation => !navigation);
+    // navigation === true ? setNavigation(() => "checked") : setNavigation("");
+  }
+
+  console.log(navigation);
+  console.log(setNavigation);
+
+  const selectedInput = (e) => {
+    // (navigation === "input") ? selectedInput === true : null ;
+    setNavigation(e.target.value)
+    navigation === setNavigation(e.target.value) ? "" : !navigation ;
+  }
+
+  console.log(setNavigation);
 
   return (
     <div className="navigation_list_section">
@@ -50,18 +78,21 @@ function Navigation() {
       {/* <button key="about" onClick={handleNavigation} className= {navigation ? "btn_navigation_active" : ""} id="#About">
           <li className="navigation_active_list" id="#About">About</li>
         </button> */}
+
+        {/* onChange={(e) => setNavigation(e.target.value)} */}
+
         <div className="navigation_data_list_w">
-          <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About"  />
-          <label htmlFor="about">About</label>
+          <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About" checked={navigation} />
+          <label htmlFor="about" onClick={handleNavigation}>About</label>
 
-          <input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" />
-          <label htmlFor="showcase">ShowCase</label>
+          <input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" checked={navigation} />
+          <label htmlFor="showcase" onClick={handleNavigation}>ShowCase</label>
 
-          <input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" />
-          <label htmlFor="contact">Contact</label>
+          <input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" checked={navigation} />
+          <label htmlFor="contact" onClick={handleNavigation}>Contact</label>
           
-          <input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" />
-          <label htmlFor="blog">Blog</label>
+          <input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" checked={navigation} />
+          <label htmlFor="blog" onClick={handleNavigation}>Blog</label>
         </div>
       </div>
     </div>
