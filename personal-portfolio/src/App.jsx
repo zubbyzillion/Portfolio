@@ -39,7 +39,7 @@ function Header() {
 }
 
 function Navigation() {
-  const [navigation, setNavigation] = useState(true);
+  const [navigation, setNavigation] = useState(".active");
   // const [selectedOption, setSelectedOptionchange] = useState(null);
 
 
@@ -51,7 +51,7 @@ function Navigation() {
   function handleNavigation() {
     // e.innerHTML();
 
-    setNavigation(!navigation) ? "" : true;
+    // setNavigation(!navigation) ? "" : true;
 
     // checked === true ? setNavigation(() => "checked") : setNavigation("");
 
@@ -60,15 +60,15 @@ function Navigation() {
     // setNavigation(navigation => !navigation);
     // navigation === true ? setNavigation(() => "checked") : setNavigation("");
   }
-
+  // setNavigation===navigation;
   console.log(navigation);
   console.log(setNavigation);
 
-  const selectedInput = (e) => {
-    // (navigation === "input") ? selectedInput === true : null ;
-    setNavigation(e.target.value)
-    navigation === setNavigation(e.target.value) ? "" : !navigation ;
-  }
+  // const selectedInput = (e) => {
+  //   // (navigation === "input") ? selectedInput === true : null ;
+  //   setNavigation(e.target.value)
+  //   navigation === setNavigation(e.target.value) ? "" : !navigation ;
+  // }
 
   console.log(setNavigation);
 
@@ -82,21 +82,21 @@ function Navigation() {
         {/* onChange={(e) => setNavigation(e.target.value)} */}
 
         <div className="navigation_data_list_w">
-          <div className="active">
+          <button className="active">
             <a href="/about" id="#about">About</a>
-          </div>
+          </button>
 
-          <div >
+          <button >
             <a href="/showcase" id="#showcase">ShowCase</a>
-          </div>
+          </button>
 
-          <div >
+          <button >
             <a href="/contact" id="#contact">Contact</a>
-          </div>
+          </button>
 
-          <div >
+          <button >
             <a href="/blog" id="#blog">Blog</a>
-          </div>
+          </button>
         </div>
       </div>
     </div>
