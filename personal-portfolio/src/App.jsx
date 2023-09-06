@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Favicon from '/Favicon.svg'
+// import reactLogo from './assets/react.svg'
+// import Favicon from '/Favicon.svg'
 import './App.css'
 
 function App() {
@@ -39,64 +39,37 @@ function Header() {
 }
 
 function Navigation() {
-  const [navigation, setNavigation] = useState(".active");
-  // const [selectedOption, setSelectedOptionchange] = useState(null);
+  const [navigation, setNavigation] = useState("id");
+  const id = [ "about", "showcase", "contact", "blog" ];
+  // const [selectedOption, setSelectedOption] = useState(null);
 
+  // navigation === selectedOption;
 
-
-  // const selectedOptionChange = (e) => {
-  //   setSelectedOption(e.innerHTML);
-  // };
-
-  function handleNavigation() {
-    // e.innerHTML();
-
-    // setNavigation(!navigation) ? "" : true;
-
-    // checked === true ? setNavigation(() => "checked") : setNavigation("");
-
-    // {setNavigation(navigation === true ? navigation === false : "")}
-
-    // setNavigation(navigation => !navigation);
-    // navigation === true ? setNavigation(() => "checked") : setNavigation("");
-  }
-  // setNavigation===navigation;
-  console.log(navigation);
-  console.log(setNavigation);
-
-  // const selectedInput = (e) => {
-  //   // (navigation === "input") ? selectedInput === true : null ;
-  //   setNavigation(e.target.value)
-  //   navigation === setNavigation(e.target.value) ? "" : !navigation ;
+  // function toggleHandle(e, id) {
+  //   setNavigation(!navigation);
   // }
 
-  console.log(setNavigation);
+  console.log(navigation);
 
   return (
     <div className="navigation_list_section">
       <div className="navigation_list">
-      {/* <button key="about" onClick={handleNavigation} className= {navigation ? "btn_navigation_active" : ""} id="#About">
-          <li className="navigation_active_list" id="#About">About</li>
-        </button> */}
-
-        {/* onChange={(e) => setNavigation(e.target.value)} */}
-
         <div className="navigation_data_list_w">
-          <button className="active">
+          <div id={id} className={navigation ? "active" : ""} >
             <a href="/about" id="#about">About</a>
-          </button>
+          </div>
 
-          <button >
+          <div id={id} className={navigation ? "active" : ""} >
             <a href="/showcase" id="#showcase">ShowCase</a>
-          </button>
+          </div>
 
-          <button >
+          <div id={id} className={navigation ? "active" : ""} >
             <a href="/contact" id="#contact">Contact</a>
-          </button>
+          </div>
 
-          <button >
+          <div id={id} className={navigation ? "active" : ""} >
             <a href="/blog" id="#blog">Blog</a>
-          </button>
+          </div>
         </div>
       </div>
     </div>
