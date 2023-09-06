@@ -82,21 +82,37 @@ function Navigation() {
         {/* onChange={(e) => setNavigation(e.target.value)} */}
 
         <div className="navigation_data_list_w">
-          <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About" checked={navigation} />
-          <label htmlFor="about" onClick={handleNavigation}>About</label>
+          <div className="active">
+            <a href="/about" id="#about">About</a>
+          </div>
 
-          <input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" checked={navigation} />
-          <label htmlFor="showcase" onClick={handleNavigation}>ShowCase</label>
+          <div >
+            <a href="/showcase" id="#showcase">ShowCase</a>
+          </div>
 
-          <input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" checked={navigation} />
-          <label htmlFor="contact" onClick={handleNavigation}>Contact</label>
-          
-          <input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" checked={navigation} />
-          <label htmlFor="blog" onClick={handleNavigation}>Blog</label>
+          <div >
+            <a href="/contact" id="#contact">Contact</a>
+          </div>
+
+          <div >
+            <a href="/blog" id="#blog">Blog</a>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+{/* <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About" checked={navigation} />
+<label htmlFor="about" onClick={handleNavigation}>About</label>
+
+<input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" checked={navigation} />
+<label htmlFor="showcase" onClick={handleNavigation}>ShowCase</label>
+
+<input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" checked={navigation} />
+<label htmlFor="contact" onClick={handleNavigation}>Contact</label>
+
+<input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" checked={navigation} />
+<label htmlFor="blog" onClick={handleNavigation}>Blog</label> */}
 
 export default App
