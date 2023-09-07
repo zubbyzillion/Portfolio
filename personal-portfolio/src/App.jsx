@@ -39,35 +39,36 @@ function Header() {
 }
 
 function Navigation() {
-  const [navigation, setNavigation] = useState("id");
+  const [navigation, setNavigation] = useState(true);
   const id = [ "about", "showcase", "contact", "blog" ];
   // const [selectedOption, setSelectedOption] = useState(null);
 
   // navigation === selectedOption;
 
-  // function toggleHandle(e, id) {
-  //   setNavigation(!navigation);
-  // }
+  function toggleHandle(event, id) {
+    // console.log(event.target)
+    console.log(id);
+  }
 
-  console.log(navigation);
+  // console.log(toggleHandle);
 
   return (
     <div className="navigation_list_section">
       <div className="navigation_list">
         <div className="navigation_data_list_w">
-          <div id={id} className={navigation ? "active" : ""} >
+          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
             <a href="/about" id="#about">About</a>
           </div>
 
-          <div id={id} className={navigation ? "active" : ""} >
+          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
             <a href="/showcase" id="#showcase">ShowCase</a>
           </div>
 
-          <div id={id} className={navigation ? "active" : ""} >
+          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
             <a href="/contact" id="#contact">Contact</a>
           </div>
 
-          <div id={id} className={navigation ? "active" : ""} >
+          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
             <a href="/blog" id="#blog">Blog</a>
           </div>
         </div>
