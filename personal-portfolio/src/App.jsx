@@ -77,6 +77,30 @@ function Navigation() {
   );
 }
 
+function About()  {
+  return (
+    <div>About</div>
+  );
+}
+
+function ShowCase()  {
+  return (
+    <div>ShowCase</div>
+  );
+}
+
+function Contact()  {
+  return (
+    <div>Contact</div>
+  );
+}
+
+function Blog()  {
+  return (
+    <div>Blog</div>
+  );
+}
+
 {/* <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About" checked={navigation} />
 <label htmlFor="about" onClick={handleNavigation}>About</label>
 
