@@ -7,10 +7,8 @@ function App() {
 
   return (
     <>
-    <main className="container">
         <Header />
         <Navigation />
-      </main>
     </>
   );
 }
@@ -123,6 +121,30 @@ function About()  {
         always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
         </p>
       </article>
+
+      <article className="xP_detail">
+        <p className="xP_text">
+        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
+        top-level Web Apps and features with various front-end/web frameworks.
+        
+        <br />
+
+        &nbsp; &nbsp; Merging my experience from creating design to writing codes I strive to 
+        always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
+        </p>
+      </article>
+
+      <article className="xP_detail">
+        <p className="xP_text">
+        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
+        top-level Web Apps and features with various front-end/web frameworks.
+        
+        <br />
+
+        &nbsp; &nbsp; Merging my experience from creating design to writing codes I strive to 
+        always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
+        </p>
+      </article>
     </div>
   );
 }
@@ -141,7 +163,10 @@ function Contact()  {
 
 function Blog()  {
   return (
-    <div className="blog_container">Blog</div>
+    <div className="blog_container">
+      Coming Soon!!!. <br />
+      Watch out for this Space🚀🚀🚀
+    </div>
   );
 }
 

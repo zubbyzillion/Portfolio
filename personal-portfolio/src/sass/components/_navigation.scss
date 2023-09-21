@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: space-evenly;
 
+    position: sticky;
+    z-index: 999;
+
     border-bottom: 1px solid var(--color-black);
 
     .navigation_list {
@@ -104,14 +107,16 @@
 
 .navigation_list_drawer {
     margin: 4rem;
+    height: calc(100vh - 6.4rem - 4rem - 4rem - 4rem - 6.8rem);
+    overflow: scroll;
 
     .navigation_list_container {
         display: flex;
         margin: 0 auto;
         justify-content: center;
         justify-items: center;
-        // height: 120rem;
-        overflow: scroll;
+        
+        
         line-height: 1.75;
     }
 }

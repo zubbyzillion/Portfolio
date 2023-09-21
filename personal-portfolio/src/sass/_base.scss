@@ -17,11 +17,19 @@ body {
     font-size: 1.6rem;
     background: var(--color-white);
     padding: 6.4rem 12.8rem;
+    height: auto;
+    // margin-bottom: 4.8rem;
+    // overflow-y: hidden;
 
     ::selection {
         color: var(--color-gray);
         background-color: var(--color-light-blue);
     }
+}
+
+h3,h4 {
+    font-family: $font-primary;
+    // letter-spacing: -.03rem;
 }
 
 #root {
