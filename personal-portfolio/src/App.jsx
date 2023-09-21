@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Children, useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import Favicon from '/Favicon.svg'
 import './App.css'
@@ -38,42 +38,40 @@ function Header() {
   );
 }
 
+const navigationPages = ["About", "ShowCase", "Contact", "Blog"]
 function Navigation() {
-  const [navigation, setNavigation] = useState(true);
-  const id = [ "about", "showcase", "contact", "blog" ];
-  // const [selectedOption, setSelectedOption] = useState(null);
+  const [currentNavigation, setCurrentNavigation] = useState(navigationPages[0]);
 
-  // navigation === selectedOption;
-
-  function toggleHandle(event, id) {
-    // console.log(event.target)
-    console.log(id);
+  const renderedPages = {
+    About: <About />,
+    ShowCase: <ShowCase />,
+    Contact: <Contact />,
+    Blog: <Blog />,
   }
 
-  // console.log(toggleHandle);
-
   return (
-    <div className="navigation_list_section">
+    <>
+    <section className="navigation_list_section">
       <div className="navigation_list">
         <div className="navigation_data_list_w">
-          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
-            <a href="/about" id="#about">About</a>
-          </div>
-
-          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
-            <a href="/showcase" id="#showcase">ShowCase</a>
-          </div>
-
-          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
-            <a href="/contact" id="#contact">Contact</a>
-          </div>
-
-          <div id={id} className={navigation ? "active" : ""} onClick={toggleHandle}>
-            <a href="/blog" id="#blog">Blog</a>
-          </div>
+          {Children.toArray(
+            navigationPages.map((nav) => {
+                return (
+                  <div key={nav}>
+                    <input type="radio" id={nav} name="nav" onChange={() => setCurrentNavigation(nav)} />
+                    <label htmlFor={nav} className={currentNavigation === nav ? "active" : null}> {nav} </label>
+                  </div>
+                )
+              })
+          )}
         </div>
       </div>
-    </div>
+    </section>
+    
+    <section className="navigation_list_drawer">
+      <section>{renderedPages[currentNavigation]}</section>
+    </section>
+    </>
   );
 }
 
