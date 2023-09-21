@@ -86,17 +86,43 @@ function About()  {
       <br />
 
       <p className="about_text">&nbsp; &nbsp; My name is Nzubechukwu P. Beluonwu-Ogbo and I am a UX Engineer, <br /> 
-        A lifelong learner eager to try out new things to drive business growth and creating amazing experience for users.
+        A lifelong learner eager to try out new things to drive business growth and creating 
+        amazing experience for users.
       </p>
 
       <br />
+
+      <div className="branches">
+        <div className="design_branch">
+          <div>
+            <h3>Design</h3>
+            <p>Proficient at user interaction, design systems & UI/UX Engineering.</p>
+          </div>
+        </div>
+
+        <span>+</span>
+
+        <div className="code_branch">
+          <div>
+            <h3>Engineering</h3>
+            <p>Proven experience building successful products for clients across several countries.</p>
+          </div>
+        </div>
+      </div>
+
       <br />
 
-      <div className="xP_detail">
+      <article className="xP_detail">
         <p className="xP_text">
-        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency working with various front-end/web frameworks building top-level Web Apps and features.
+        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
+        top-level Web Apps and features with various front-end/web frameworks.
+        
+        <br />
+
+        &nbsp; &nbsp; Merging my experience from creating design to writing codes I strive to 
+        always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
         </p>
-      </div>
+      </article>
     </div>
   );
 }

@@ -1,3 +1,22 @@
 .about_container {
     margin: 0 auto;
+
+    .branches {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        div {
+            padding: 2rem 3rem;
+            background-color: var(--color-gray);
+            border-radius: .8rem;
+        }
+
+        span {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
 }
