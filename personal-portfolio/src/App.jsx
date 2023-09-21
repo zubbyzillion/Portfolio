@@ -69,7 +69,7 @@ function Navigation() {
     </section>
     
     <section className="navigation_list_drawer">
-      <section>{renderedPages[currentNavigation]}</section>
+      <section className="navigation_list_container">{renderedPages[currentNavigation]}</section>
     </section>
     </>
   );
@@ -77,38 +77,26 @@ function Navigation() {
 
 function About()  {
   return (
-    <div>About</div>
+    <div className="about_container">About</div>
   );
 }
 
 function ShowCase()  {
   return (
-    <div>ShowCase</div>
+    <div className="showcase_container">ShowCase</div>
   );
 }
 
 function Contact()  {
   return (
-    <div>Contact</div>
+    <div className="contact_container">Contact</div>
   );
 }
 
 function Blog()  {
   return (
-    <div>Blog</div>
+    <div className="blog_container">Blog</div>
   );
 }
-
-{/* <input key="about" type="radio" name="navaigation_data_list" value="about" id="#About" checked={navigation} />
-<label htmlFor="about" onClick={handleNavigation}>About</label>
-
-<input key="showcase" type="radio" name="navaigation_data_list" value="showcase" id="#ShowCase" checked={navigation} />
-<label htmlFor="showcase" onClick={handleNavigation}>ShowCase</label>
-
-<input key="contact" type="radio" name="navaigation_data_list" value="contact" id="#Contact" checked={navigation} />
-<label htmlFor="contact" onClick={handleNavigation}>Contact</label>
-
-<input key="blog" type="radio" name="navaigation_data_list" value="blog" id="#Blog" checked={navigation} />
-<label htmlFor="blog" onClick={handleNavigation}>Blog</label> */}
 
 export default App
