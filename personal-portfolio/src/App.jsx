@@ -136,20 +136,52 @@ function ShowCase()  {
       <div className="showcase_gallery">
         <div className="gallery_container">
           <a href="/#" target='blank'>
-
             <figure className="gallery_1" aria-label="AGI Website Redesign"></figure>
-
           </a>
+
+          <div className="gallery_content">
             <div className="gallery_label_section">
-              <span className="gallery_label">Figma</span>
-              <span className="gallery_label">ReactJS</span>
+              <div>
+                <span className="gallery_label">Figma</span>
+                <span className="gallery_label">ReactJS</span>
+              </div>
+              <div>
+                <span>Visit Site</span>
+                <span>View Figma File</span>
+              </div>
             </div>
 
             <div className="gallery_description_section">
               <p className="gallery_description_text">
-                A research-based project built as an MVP for a startup.
+                A research-based project built as an MVP for a startup. A research-based project built as an MVP for a startup.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="gallery_container">
+          <a href="/#" target='blank'>
+            <figure className="gallery_1" aria-label="AGI Website Redesign"></figure>
+          </a>
+
+          <div className="gallery_content">
+            <div className="gallery_label_section">
+              <div>
+                <span className="gallery_label">Figma</span>
+                <span className="gallery_label">ReactJS</span>
+              </div>
+              <div>
+                <span>Visit Site</span>
+                <span>View Figma File</span>
+              </div>
+            </div>
+
+            <div className="gallery_description_section">
+              <p className="gallery_description_text">
+                A research-based project built as an MVP for a startup. A research-based project built as an MVP for a startup.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
