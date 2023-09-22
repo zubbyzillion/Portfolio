@@ -121,37 +121,18 @@ function About()  {
         always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
         </p>
       </article>
-
-      <article className="xP_detail">
-        <p className="xP_text">
-        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
-        top-level Web Apps and features with various front-end/web frameworks.
-        
-        <br />
-
-        &nbsp; &nbsp; Merging my experience from creating design to writing codes I strive to 
-        always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
-        </p>
-      </article>
-
-      <article className="xP_detail">
-        <p className="xP_text">
-        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
-        top-level Web Apps and features with various front-end/web frameworks.
-        
-        <br />
-
-        &nbsp; &nbsp; Merging my experience from creating design to writing codes I strive to 
-        always create a long-lasting positive experience in the mind of the user which does equal to a good product which the user loves💞.
-        </p>
-      </article>
     </div>
   );
 }
 
 function ShowCase()  {
   return (
-    <div className="showcase_container">ShowCase</div>
+    <div className="showcase_container">
+      <div className="showcase_heading">
+        <h3 className="showcase_title">Design + Engineering</h3>
+        <span>Below are collections of projects and ideas I have worked on💡.</span>
+      </div>
+    </div>
   );
 }
 
@@ -164,7 +145,7 @@ function Contact()  {
 function Blog()  {
   return (
     <div className="blog_container">
-      Coming Soon!!!. <br />
+      <h3>Coming Soon!!!.</h3>
       Watch out for this Space🚀🚀🚀
     </div>
   );

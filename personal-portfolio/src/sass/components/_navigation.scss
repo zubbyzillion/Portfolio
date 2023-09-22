@@ -106,16 +106,14 @@
 }
 
 .navigation_list_drawer {
-    margin: 4rem;
+    margin: 2rem 4rem;
     height: calc(100vh - 6.4rem - 4rem - 4rem - 4rem - 6.8rem);
     overflow: scroll;
 
     .navigation_list_container {
         display: flex;
+        padding: 2rem 0;
         margin: 0 auto;
-        justify-content: center;
-        justify-items: center;
-        
         
         line-height: 1.75;
     }
