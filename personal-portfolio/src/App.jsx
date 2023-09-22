@@ -132,6 +132,26 @@ function ShowCase()  {
         <h3 className="showcase_title">Design + Engineering</h3>
         <span>Below are collections of projects and ideas I have worked on💡.</span>
       </div>
+
+      <div className="showcase_gallery">
+        <div className="gallery_container">
+          <a href="/#" target='blank'>
+
+            <figure className="gallery_1" aria-label="AGI Website Redesign"></figure>
+
+          </a>
+            <div className="gallery_label_section">
+              <span className="gallery_label">Figma</span>
+              <span className="gallery_label">ReactJS</span>
+            </div>
+
+            <div className="gallery_description_section">
+              <p className="gallery_description_text">
+                A research-based project built as an MVP for a startup.
+              </p>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
