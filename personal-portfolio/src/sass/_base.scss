@@ -17,7 +17,9 @@ body {
     font-size: 1.6rem;
     background: var(--color-white);
     padding: 6.4rem 12.8rem;
+    // padding-top: 6.4rem;
     height: 100vh;
+    border-bottom: .8rem solid var(--color-dark-blue);
 
     ::selection {
         color: var(--color-gray);

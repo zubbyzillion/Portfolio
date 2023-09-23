@@ -7,9 +7,24 @@ function App() {
 
   return (
     <>
-        <Header />
-        <Navigation />
+      <Preloader />
+      <Header />
+      <Navigation />
     </>
+  );
+}
+
+function Preloader() {
+  return (
+    <section className="preloader">
+      <div className="preloader_wrapper">
+        <p className="p_display">
+          <span className="p_name">Nzubechukwu .P Beluonwu-Ogbo</span>
+          <span className="p_mark">&nbsp;| &nbsp;</span>
+          <span className="p_role">UX Engineer</span>
+        </p>
+      </div>
+    </section>
   );
 }
 
