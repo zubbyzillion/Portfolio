@@ -15,6 +15,8 @@ function App() {
 }
 
 function Preloader() {
+  // const tl = gsap.timeline();
+
   return (
     <section className="preloader">
       <div className="preloader_wrapper">
@@ -98,9 +100,11 @@ function About()  {
 
       <br />
 
-      <p className="about_text">&nbsp; &nbsp; My name is Nzubechukwu P. Beluonwu-Ogbo and I am a UX Engineer, <br /> 
-        A lifelong learner eager to try out new things to drive business growth and creating 
-        amazing experience for users.
+      <p className="about_text">&nbsp; &nbsp; My name is Nzubechukwu P. Beluonwu-Ogbo, a 
+       lifelong learner eager to try out new things to drive business growth and creating 
+        amazing experience for users. <br />
+        I am a graduate of Electrical/Electronics Engineering from Abia State University. <br />
+        I am a fun and goal-oriented team mate to work with and you would either find me playing the game of chess, writing codes or reading a book during my leisure time .
       </p>
 
       <br />
@@ -127,7 +131,7 @@ function About()  {
 
       <article className="xP_detail">
         <p className="xP_text">
-        &nbsp; &nbsp; I have gained over 3+ years of experience and proficiency building 
+        &nbsp; &nbsp; I have gained over 2+ years of experience and proficiency building 
         top-level Web Apps and features with various front-end/web frameworks.
         
         <br />
@@ -201,6 +205,12 @@ function ShowCase()  {
       </div>
     </div>
   );
+}
+
+function ShowCaseList() {
+  return (
+    <h3>ShowCase List</h3>
+  )
 }
 
 function Contact()  {
