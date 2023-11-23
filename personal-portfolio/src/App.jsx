@@ -215,7 +215,10 @@ function ShowCaseList() {
 
 function Contact()  {
   return (
-    <div className="contact_container">Contact</div>
+    <div className="contact_container">
+      <h3 className="contact_heading">You can find me here</h3>
+      <span>Hey Don't be a stranger, send a DM😎.</span>
+    </div>
   );
 }
 
