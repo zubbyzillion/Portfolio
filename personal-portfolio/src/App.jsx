@@ -103,7 +103,7 @@ function About()  {
       <p className="about_text">&nbsp; &nbsp; My name is Nzubechukwu P. Beluonwu-Ogbo, a 
        lifelong learner eager to try out new things to drive business growth and creating 
         amazing experience for users. <br />
-        I am a graduate of Electrical/Electronics Engineering from Abia State University. <br />
+        I am a graduate of Electrical/Electronics Engineering at Abia State University. <br />
         I am a fun and goal-oriented team mate to work with and you would either find me playing the game of chess, writing codes or reading a book during my leisure time .
       </p>
 
